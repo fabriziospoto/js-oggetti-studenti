@@ -4,15 +4,18 @@
 //   stampare per ognuno nome e cognome.
 // - Dare la possibilità all’utente attraverso 3 prompt di aggiungere
 //   un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-$( document ).ready(function() {
-    //alert('ciao'); //Verifica collegamenti
+$(document).ready(function() {
+
+    //***************ESERCIZIO 1
+    //Creo oggetto
     var studente = {
-        "nome" : Tizio
-        "cognome" : De Tizis
+        "nome" : "Tizio",
+        "cognome" : "De Tizis",
         "eta" : 21
     }
-
+    //Uso ciclo for in per stampare a schermo
     for (var k in studente) {
         console.log(studente[k]);
     }
+    //***************ESERCIZIO 2
 });
