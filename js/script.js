@@ -16,6 +16,7 @@ $(document).ready(function() {
     //Uso ciclo for in per stampare a schermo
     for (var k in studente) {
         console.log(studente[k]);
+        var stamp1 = $('#esercizio1').append(studente[k] + ' ');
     };
 
     //***************ESERCIZIO 2
@@ -40,6 +41,7 @@ $(document).ready(function() {
     // Uso ciclo for per stampare nome e cognome di ogni studente
     for (var i = 0; i < classe.length; i++){
         console.log(classe[i].nome + ' ' + classe[i].cognome);
+        var stamp2 = $('#esercizio2').append(classe[i].nome + ' ' + classe[i].cognome + ' ');
     };
 
     //***************ESERCIZIO 3
@@ -55,6 +57,7 @@ $(document).ready(function() {
     studImm.eta = age;
     // Stampo oggetto
     console.log(studImm);
+    var stamp3 = $('#esercizio3').append(name + ' ' + surname + ' ' + age);
 
     //*******FUNZIONI
     function ageF() {
