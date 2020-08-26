@@ -48,11 +48,20 @@ $(document).ready(function() {
     // creo prompt con cui chiedere dati ad utente
     var name = prompt('Inserisci un nome');
     var surname = prompt('Inserisci un cognome');
-    var age = prompt('Inserisci un età');
+    var age = ageF();
     // Inserisco dati in oggetto
     studImm.nome = name;
     studImm.cognome = surname;
     studImm.eta = age;
     // Stampo oggetto
     console.log(studImm);
+
+    //*******FUNZIONI
+    function ageF() {
+        var age1 = prompt('Inserisci un età');
+        while (isNaN(age1)) {
+            age1 = prompt('Attenzione! Numero non valido. Inserisci un numero valido');
+        }
+        return age1;
+    }
 });
