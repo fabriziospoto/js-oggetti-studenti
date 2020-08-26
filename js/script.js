@@ -12,10 +12,47 @@ $(document).ready(function() {
         "nome" : "Tizio",
         "cognome" : "De Tizis",
         "eta" : 21
-    }
+    };
     //Uso ciclo for in per stampare a schermo
     for (var k in studente) {
         console.log(studente[k]);
-    }
+    };
+
     //***************ESERCIZIO 2
+    // Creo array di oggetti
+    var classe = [
+        {
+            "nome" : "Caio",
+            "cognome" : "De Caius",
+            "eta" : 20
+        },
+        {
+            "nome" : "Sempronio",
+            "cognome" : " De Sempronius",
+            "eta" : 23
+        },
+        {
+            "nome" : "Mevio",
+            "cognome" : "De Mevius",
+            "eta" : 24
+        }
+    ];
+    // Uso ciclo for per stampare nome e cognome di ogni studente
+    for (var i = 0; i < classe.length; i++){
+        console.log(classe[i].nome + ' ' + classe[i].cognome);
+    };
+
+    //***************ESERCIZIO 2
+    // Creo oggetto vuoto
+    var studImm = {};
+    // creo prompt con cui chiedere dati ad utente
+    var name = prompt('Inserisci un nome');
+    var surname = prompt('Inserisci un cognome');
+    var age = prompt('Inserisci un età');
+    // Inserisco dati in oggetto
+    studImm.nome = name;
+    studImm.cognome = surname;
+    studImm.eta = age;
+    // Stampo oggetto
+    console.log(studImm);
 });
