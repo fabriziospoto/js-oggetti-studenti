@@ -42,7 +42,7 @@ $(document).ready(function() {
         console.log(classe[i].nome + ' ' + classe[i].cognome);
     };
 
-    //***************ESERCIZIO 2
+    //***************ESERCIZIO 3
     // Creo oggetto vuoto
     var studImm = {};
     // creo prompt con cui chiedere dati ad utente
